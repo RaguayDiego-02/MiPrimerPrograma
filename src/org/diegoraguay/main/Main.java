@@ -12,7 +12,7 @@ public class Main {
        ViewMenuPrincipal menu = new ViewMenuPrincipal(); 
        
        System.out.println("Mi primer programa");
-       menu.mostrarMenu(); 
+       menu.mostrarMenuPrincipal(); 
        
       
     }
