@@ -21,7 +21,7 @@ public class ViewMenuPrincipal {
                     mostrarMenuOperacionesMatematicas();  
                     break;
                 case 2:
-                    System.out.println("Entrando a menu Operaciones de texto");
+                    mostrarMenuOperacionesDeTexto();
                     break;
                 case 3:
                     System.out.println("Entrando a menu Operaciones de logica");
@@ -40,7 +40,7 @@ public class ViewMenuPrincipal {
     int opcionMatematica = 0;
 
     do{
-        System.out.println("|________Menu Matematico_______|");
+        System.out.println("|_Menu operaciones matematicas_|");
         System.out.println("|1. Calculadora de salario     |");
         System.out.println("|2. Área de triángulo          |");
         System.out.println("|3. Promedio académico         |");
@@ -89,7 +89,7 @@ public class ViewMenuPrincipal {
                 System.out.println("Potencia al cubo ");
                 break; 
             case 11:
-                System.out.println("Saliendo del Menu Matematico");
+                System.out.println("Saliendo del Menu operaciones matematicas");
                 break;
             default :
                 System.out.println("Opcion invalida, mantener el rango(1-11)");
@@ -97,7 +97,68 @@ public class ViewMenuPrincipal {
         }
 
     } while (opcionMatematica != 11);
-    
+            
  }
  
+public void mostrarMenuOperacionesDeTexto(){
+    int opcionTexto = 0; 
+     
+    do{
+        System.out.println("|__Menu operaciones de texto__|");
+        System.out.println("|1.Concatenador de nombre     |");
+        System.out.println("|2.Contador de longitud       |");
+        System.out.println("|3.Inversor de texto          |");
+        System.out.println("|4.Detector de vocales        |");
+        System.out.println("|5.Extractor de iniciales     |");
+        System.out.println("|6.Normalizador de mayusculas |");
+        System.out.println("|7.Conversor binario          |");
+        System.out.println("|8.Repetidor de palabras      |");
+        System.out.println("|9.Validador de password      |");
+        System.out.println("|10.Generador de email        |");
+        System.out.println("|11.Salir del menu            |");
+        System.out.println("|_____________________________|");
+        System.out.println("Seleccione una opcion");
+        
+        opcionTexto = Integer.parseInt(leer.nextLine()); 
+        
+        switch (opcionTexto){
+            case 1: 
+                System.out.println("Concatenador de nombre");
+                break; 
+            case 2:
+                System.out.println("Contador de longitud");
+                break; 
+            case 3:
+                System.out.println("Inversor de texto");
+                break; 
+            case 4:    
+                System.out.println("Detector de vocales");
+                break; 
+            case 5:   
+                System.out.println("Extractor de iniciales");
+                break; 
+            case 6:
+                System.out.println("Normalizador de mayusculas");
+                break; 
+            case 7:
+                System.out.println("Conversor binario");
+                break; 
+            case 8:
+                System.out.println("Repetidor de palabras");
+                break; 
+            case 9:
+                System.out.println("Validador de password");
+                break; 
+            case 10:
+                System.out.println("Generador de email");
+                break; 
+            case 11:
+                System.out.println("Saliendo del Menu operaciones de texto");
+                break;
+            default :
+                System.out.println("Opcion invalida, mantener el rango(1-11)");
+        }
+        
+    }while (opcionTexto !=11); 
+  }
 }
